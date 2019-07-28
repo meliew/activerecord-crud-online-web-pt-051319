@@ -72,8 +72,11 @@ end
 def can_be_found_updated_and_saved
   # Updtate the title "Awesome Flick" to "Even Awesomer Flick", save it, then return it
   Movie.create(title: "Awesome Flick")
-  __
-  __
+
+  movie = Movie.find_by_title("Awesome Flick")
+
+  sql = "UPDATE movies SET title = 'Even Awesomer Flick', WHERE name = 'Awesome Flick'"
+  DB[:conn].execute(sql, movie.title)
   __
 end
 
