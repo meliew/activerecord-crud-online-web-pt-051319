@@ -27,6 +27,7 @@ def can_be_created_with_a_hash_of_attributes
   a.lead = "Paul Newman"
   a.in_theaters = false
 end
+end
 
 def can_be_created_in_a_block(args = title )
   # If no arguments are passed, use default values:
