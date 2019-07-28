@@ -21,7 +21,7 @@ def can_be_created_with_a_hash_of_attributes
       in_theaters: false
   }
   movie = Movie.create(attributes)
-  end
+  
 end
 
 def can_be_created_in_a_block(args = title )
