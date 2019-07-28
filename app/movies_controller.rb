@@ -77,6 +77,7 @@ def can_be_found_updated_and_saved
 
   sql = "UPDATE movies SET title = 'Even Awesomer Flick', WHERE name = 'Awesome Flick'"
   DB[:conn].execute(sql, movie.title)
+  movie 
   __
 end
 
